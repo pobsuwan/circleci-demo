@@ -11,3 +11,8 @@ checkout:
   post:
     - git submodule sync
     - git submodule update --init
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: aqueous-forest-40891
