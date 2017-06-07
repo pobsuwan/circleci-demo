@@ -4,7 +4,9 @@
   "description": "for test circleci",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "./node_modules/.bin/mocha",
+    "start": "node index.js",
+    "mocha": "./node_modules/.bin/mocha test/ --recursive"
   },
   "repository": {
     "type": "git",
