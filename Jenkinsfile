@@ -1,7 +1,12 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'node:8.0.0'
+    }
+    
+  }
   stages {
-    stage('') {
+    stage('error') {
       steps {
         echo 'Hello jenkins'
       }
